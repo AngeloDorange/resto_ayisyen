@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid crimson;
+}
+nav h1{
+    color: royalblue;
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+nav a:hover{
+    color: crimson;
+    text-transform: uppercase;
+    border-bottom: 1px solid royalblue;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(IMG/platter-g364997f34_1920.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding: 40px;
+    height: auto;
+}
+header h1{
+    font-size: 50px;
+}
+header h4{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -20px;
+    border-bottom: 1px solid royalblue;
+}
+header button{
+    padding: 10px 20px;
+    background-color: white;
+    color: royalblue;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+header button:hover{
+    background: royalblue;
+    color: white;
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.main .content .card .left h1{
+    color: royalblue;
+}
+.main .content .card.rigth{
+    flex: 0 0 70%;
+}
+.main .content .card .rigth img{
+    width: 400px;
+    height: 300px;
+    margin-top: 5px;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid crimson;
+    background-color: black;
+    color: white;
+    padding: 30px 100px;
+}
+footer h1{
+    border-bottom: 1px solid royalblue;
+    width: 20%;
+    padding-bottom: 5px;
+}
+footer .Services{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .Services .Service{
+    margin-right: 30px;
+    padding: 10px;
+}
+footer .Services .Service h2{
+    color: royalblue;
+}
+footer .Services .Service p{
+    max-width: 500px;
+}
+footer .contact{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+}
+footer .contact span{
+    color: royalblue;
+}
+
+
+
+
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .about{
+        height: auto;
+    }
+    .content-about{
+        flex-wrap: wrap;
+    }
+    .main .card{
+        margin: 10px;
+    }
+    .main .content .card .left{
+        width: auto;
+    }
+    .main .content .card .rigth img{
+       height: 200px; 
+       width: 100%;
+       margin-top: 0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+}
